@@ -15,6 +15,16 @@ import { isPasswordConfigured, sessionFromCookieHeader } from './auth';
 const GUEST_PUBLIC_PATHS = new Set([
   '/api/search',
   '/api/detail',
+
+  // 首页/推荐
+  '/api/douban',
+  '/api/bangumi/calendar',
+  '/api/hot-list',
+
+  // 预置订阅（DEFAULT_SUBSCRIPTIONS）
+  '/api/source-list',
+
+  // 直播
   '/api/live/playlist',
   '/api/live/epg',
 ]);
